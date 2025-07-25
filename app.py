@@ -21,7 +21,7 @@ def load_cnn_model():
         model = tf.keras.models.load_model('cifar10_model.h5')
         return model
     except Exception as e:
-        st.error(f"Error loading the model: {e}. Make sure 'cifar10_cnn_model.h5' is in the same directory.")
+        st.error(f"Error loading the model: {e}. Make sure 'cifar10_model.h5' is in the same directory.")
         return None
 
 
