@@ -1,4 +1,5 @@
 🖼️ CIFAR-10 Image Classifier Streamlit App
+
 This repository contains a Convolutional Neural Network (CNN) based image classifier for the CIFAR-10 dataset, packaged as an interactive web application using Streamlit. Users can upload an image to get a prediction or view the model's overall performance metrics on the CIFAR-10 test set.
 
 ✨ Features
