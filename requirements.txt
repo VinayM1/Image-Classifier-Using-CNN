@@ -1,0 +1,8 @@
+streamlit
+tensorflow==2.8.0
+numpy
+Pillow
+scikit-learn  # <--- ADD THIS LINE
+seaborn
+matplotlib
+pandas
