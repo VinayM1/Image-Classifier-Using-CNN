@@ -1,8 +1,8 @@
 streamlit
-tensorflow==2.8.0
+tensorflow==2.15.0 # Or 2.19.0, whatever you retrained with
 numpy
 Pillow
-scikit-learn  # <--- ADD THIS LINE
+scikit-learn
 seaborn
 matplotlib
 pandas
