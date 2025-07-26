@@ -11,6 +11,7 @@ Users can upload images to get real-time class predictions with confidence score
 Whether you’re learning deep learning or showcasing your ML deployment skills, this app delivers a complete experience from training to deployment. 🚀
 
 ✨ Features
+
 ✅ Single Image Prediction
 Upload any 32x32 image and instantly receive the model’s prediction.
 
@@ -24,6 +25,7 @@ Confusion Matrix + Classification Report for detailed analysis.
 Simple, modern, and intuitive for everyone to use.
 
 🚀 How It Works
+
 📦 Dataset:
 CIFAR-10 — 60,000 color images (32×32) across 10 classes:
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
