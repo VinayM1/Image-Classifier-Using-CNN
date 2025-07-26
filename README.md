@@ -1,91 +1,91 @@
 🖼️ CIFAR-10 Image Classifier Web App
 Built with TensorFlow • Keras • Streamlit
-Live App: https://vm-image-classifier-using-cnn.streamlit.app/
-linkedin: https://www.linkedin.com/in/vinay-meena-036119326/
+🔗 Live App | 🔗 LinkedIn
 
-This project is an interactive image classification web app powered by a Convolutional Neural Network (CNN) trained on the CIFAR-10 dataset. Users can upload images to get real-time predictions, explore confidence scores, and analyze the model’s performance metrics — all in an intuitive web interface built using Streamlit.
+🎯 Description
+This project is an end-to-end image classification web app built with TensorFlow, Keras, and Streamlit, showcasing the power of Convolutional Neural Networks (CNNs) on the popular CIFAR-10 dataset.
+Users can upload images to get real-time class predictions with confidence scores, and explore the model's performance through a Confusion Matrix and Classification Report — all wrapped in a sleek, interactive UI.
+Whether you’re learning deep learning or showcasing your ML deployment skills, this app delivers a complete experience from training to deployment. 🚀
 
 ✨ Features
 ✅ Single Image Prediction
-Upload any 32x32 image and instantly get predictions from the trained CNN model.
+Upload any 32x32 image and instantly receive the model’s prediction.
 
 ✅ Confidence Scores
-See a probability distribution across all 10 CIFAR-10 classes for any uploaded image.
+View probability distribution across all 10 classes for each image.
 
 ✅ Full Model Evaluation
-Explore the Confusion Matrix and Classification Report to assess per-class performance.
+Confusion Matrix + Classification Report for detailed analysis.
 
-✅ User-Friendly Interface
-Built using Streamlit for a seamless and interactive user experience.
+✅ Streamlit-Powered Interface
+Simple, modern, and intuitive for everyone to use.
 
 🚀 How It Works
-🔹 Dataset:
-CIFAR-10 contains 60,000 color images (32x32 pixels) across 10 classes:
+📦 Dataset:
+CIFAR-10 — 60,000 color images (32×32) across 10 classes:
 airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
 
-🔹 CNN Architecture:
-A custom-built Convolutional Neural Network using:
+🧠 CNN Architecture:
+Custom CNN with:
 
 Multiple Conv2D layers
 
-BatchNormalization, ReLU, MaxPooling, and Dropout
+BatchNormalization, ReLU, MaxPooling, Dropout
 
-Fully connected Dense layers for final classification
+Final Dense layers for classification
 
-🔹 Training:
+🛠️ Training:
 
-Trained using data augmentation for better generalization
+Data Augmentation for generalization
 
-EarlyStopping used to avoid overfitting and ensure optimal validation performance
+EarlyStopping to prevent overfitting
 
 💻 Tech Stack
 Technology	Purpose
-Python	Core programming language
-TensorFlow & Keras	Model architecture, training, and evaluation
-Streamlit	Web app interface and interaction
-NumPy	Array and tensor computations
-Pillow (PIL)	Image upload and manipulation in Streamlit
-Scikit-learn	Confusion matrix, classification report
-Matplotlib & Seaborn	Visualizing metrics and performance
+Python	Core programming
+TensorFlow & Keras	Model building and training
+Streamlit	Web app interface
+NumPy	Numerical operations
+Pillow (PIL)	Image manipulation in the app
+Scikit-learn	Metrics (Confusion Matrix, Classification Report)
+Matplotlib & Seaborn	Data visualization
 
-🏁 Getting Started Locally
-1️⃣ Clone the Repository
+🏁 Getting Started (Local)
+🔧 1. Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/your-username/cifar10-image-classifier.git
 cd cifar10-image-classifier
-🔁 Replace your-username with your GitHub username.
+Replace your-username with your GitHub handle.
 
-2️⃣ Install Dependencies
-Make sure you have Python installed, then run:
-
+📦 2. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-📌 Note: TensorFlow v2.8.0 is specified for compatibility.
+TensorFlow version 2.8.0 is recommended for compatibility.
 
-3️⃣ Launch the App
+🚀 3. Launch the App
 bash
 Copy
 Edit
 streamlit run cnn_web_app.py
-🌐 The app will automatically open in your web browser. Ensure cifar10_cnn_model.h5 (trained model) is in the same directory.
+Ensure cifar10_cnn_model.h5 is in the same directory.
 
 📈 Model Performance
-Test Accuracy: ~70–75% on CIFAR-10
+Test Accuracy: ~70–75%
 
-Analyze performance class-wise with:
+Full evaluation includes:
 
 ✅ Confusion Matrix
 
 ✅ Classification Report
-
-You’ll find these in the “📊 Full Evaluation” section of the app.
+Check the 📊 Full Evaluation tab inside the app for visual breakdowns.
 
 🤝 Contributing
-Feel free to fork the repo, suggest improvements, or submit pull requests. Contributions are welcome!
+Open to pull requests, ideas, or collaboration!
+Feel free to fork the repository and improve the app ✨
 
 📄 License
 This project is licensed under the MIT License — free to use, modify, and distribute.
