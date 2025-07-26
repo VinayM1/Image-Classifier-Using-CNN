@@ -1,0 +1,3 @@
+[runner]
+# Force Streamlit Cloud to use Python 3.10, which is compatible with TensorFlow 2.16.1
+python_version = "3.10"
