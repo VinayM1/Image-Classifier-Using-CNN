@@ -1,4 +1,5 @@
 import streamlit as st
+import tensorflow as tf
 import numpy as np
 from PIL import Image
 from sklearn.metrics import confusion_matrix, classification_report
@@ -21,7 +22,7 @@ def load_cnn_model():
         model = tf.keras.models.load_model('cifar10_model.h5')
         return model
     except Exception as e:
-        st.error(f"Error loading the model: {e}. Make sure 'cifar10_model.h5' is in the same directory.")
+        st.error(f"Error loading the model: {e}. Make sure 'cifar10_cnn_model.h5' is in the same directory.")
         return None
 
 
@@ -65,7 +66,8 @@ st.markdown("Upload an image and let the CNN predict what it is!")
 
 st.info(
     f"This model is trained on the CIFAR-10 dataset and can only predict images belonging to these categories: {', '.join(class_names)}.")
-st.warning("🔍 **Note:** While the model performs well on most classes, it struggles to accurately classify images of **cats** and some similar-looking animals. Results for these categories may be less reliable.")
+st.warning(
+    f"🔍 **Note:** While the model performs well on most classes, it struggles to accurately classify images of **cats** and some similar-looking animals. Results for these categories may be less reliable.")
 
 
 if model is None:
