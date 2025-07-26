@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.15.0 # Or 2.19.0, whatever you retrained with
+tensorflow==2.16.0 # Or 2.19.0, whatever you retrained with
 numpy
 Pillow
 scikit-learn
