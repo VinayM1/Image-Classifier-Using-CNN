@@ -1,6 +1,9 @@
 🖼️ CIFAR-10 Image Classifier Web App
 Built with TensorFlow • Keras • Streamlit
-🔗 Live App | 🔗 LinkedIn
+
+🔗 Live App : https://vm-image-classifier-using-cnn.streamlit.app/
+
+🔗 LinkedIn : https://www.linkedin.com/in/vinay-meena-036119326/
 
 🎯 Description
 This project is an end-to-end image classification web app built with TensorFlow, Keras, and Streamlit, showcasing the power of Convolutional Neural Networks (CNNs) on the popular CIFAR-10 dataset.
