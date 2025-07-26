@@ -1,8 +1,8 @@
 streamlit==1.47.1
-tensorflow==2.16.1 # Use the exact TensorFlow version you just successfully trained with
-numpy
-Pillow
-scikit-learn
-seaborn
-matplotlib
-pandas
+tensorflow==2.16.1
+numpy==1.26.4
+Pillow==10.3.0
+scikit-learn==1.5.0
+seaborn==0.13.2
+matplotlib==3.8.4
+pandas==2.2.2
