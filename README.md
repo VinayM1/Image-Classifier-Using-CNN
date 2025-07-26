@@ -1,68 +1,91 @@
-🖼️ CIFAR-10 Image Classifier Streamlit App
+🖼️ CIFAR-10 Image Classifier Web App
+Built with TensorFlow • Keras • Streamlit
+Live App: https://vm-image-classifier-using-cnn.streamlit.app/
+linkedin: https://www.linkedin.com/in/vinay-meena-036119326/
 
-This repository contains a Convolutional Neural Network (CNN) based image classifier for the CIFAR-10 dataset, packaged as an interactive web application using Streamlit. Users can upload an image to get a prediction or view the model's overall performance metrics on the CIFAR-10 test set.
+This project is an interactive image classification web app powered by a Convolutional Neural Network (CNN) trained on the CIFAR-10 dataset. Users can upload images to get real-time predictions, explore confidence scores, and analyze the model’s performance metrics — all in an intuitive web interface built using Streamlit.
 
 ✨ Features
-Single Image Prediction: Upload an image and get a real-time prediction from the trained CNN model.
+✅ Single Image Prediction
+Upload any 32x32 image and instantly get predictions from the trained CNN model.
 
-Confidence Scores: See the probability distribution across all 10 classes for the uploaded image.
+✅ Confidence Scores
+See a probability distribution across all 10 CIFAR-10 classes for any uploaded image.
 
-Full Model Evaluation: View the Confusion Matrix and Classification Report for the model's performance on the entire CIFAR-10 test dataset.
+✅ Full Model Evaluation
+Explore the Confusion Matrix and Classification Report to assess per-class performance.
 
-User-Friendly Interface: Built with Streamlit for a simple and intuitive web experience.
+✅ User-Friendly Interface
+Built using Streamlit for a seamless and interactive user experience.
 
 🚀 How It Works
-The application uses a CNN model trained on the CIFAR-10 dataset.
+🔹 Dataset:
+CIFAR-10 contains 60,000 color images (32x32 pixels) across 10 classes:
+airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
 
-CIFAR-10 Dataset: Consists of 60,000 32x32 color images across 10 classes (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck).
+🔹 CNN Architecture:
+A custom-built Convolutional Neural Network using:
 
-CNN Model: A custom-built CNN architecture with multiple convolutional layers, Batch Normalization, ReLU activations, Max Pooling, and Dropout for robust feature learning and regularization.
+Multiple Conv2D layers
 
-Training: The model is trained using data augmentation and Early Stopping to prevent overfitting and achieve good generalization.
+BatchNormalization, ReLU, MaxPooling, and Dropout
 
-💻 Technologies Used
-Python: The core programming language for the entire project.
+Fully connected Dense layers for final classification
 
-TensorFlow & Keras: Used for building, training, and evaluating the Convolutional Neural Network (CNN) model.
+🔹 Training:
 
-Streamlit: The framework used to create the interactive web application.
+Trained using data augmentation for better generalization
 
-NumPy: Essential for numerical operations, especially with image data and model predictions.
+EarlyStopping used to avoid overfitting and ensure optimal validation performance
 
-Pillow (PIL): Used for image loading and basic image manipulation within the Streamlit app.
+💻 Tech Stack
+Technology	Purpose
+Python	Core programming language
+TensorFlow & Keras	Model architecture, training, and evaluation
+Streamlit	Web app interface and interaction
+NumPy	Array and tensor computations
+Pillow (PIL)	Image upload and manipulation in Streamlit
+Scikit-learn	Confusion matrix, classification report
+Matplotlib & Seaborn	Visualizing metrics and performance
 
-Scikit-learn: Utilized for calculating performance metrics like the Confusion Matrix and Classification Report.
-
-Matplotlib & Seaborn: Used for creating visualizations, particularly the Confusion Matrix heatmap and training plots.
-
-🏁 Getting Started (Local Run)
-To get a quick local instance of the app running:
-
-Clone the Repository:
-
+🏁 Getting Started Locally
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/your-username/cifar10-image-classifier.git
 cd cifar10-image-classifier
+🔁 Replace your-username with your GitHub username.
 
-(Remember to replace your-username with your actual GitHub username)
+2️⃣ Install Dependencies
+Make sure you have Python installed, then run:
 
-Install Dependencies:
-Ensure you have Python installed, then install the required packages:
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
+📌 Note: TensorFlow v2.8.0 is specified for compatibility.
 
-(Note: The requirements.txt specifies tensorflow==2.8.0 for optimal compatibility.)
-
-Run the Streamlit App:
-
+3️⃣ Launch the App
+bash
+Copy
+Edit
 streamlit run cnn_web_app.py
-
-This command will open the application in your default web browser. Make sure the cifar10_cnn_model.h5 file (your trained model) is in the same directory as cnn_web_app.py.
+🌐 The app will automatically open in your web browser. Ensure cifar10_cnn_model.h5 (trained model) is in the same directory.
 
 📈 Model Performance
-The model typically achieves a test accuracy of ~70-75% on the CIFAR-10 dataset. The included "Full Model Evaluation" section in the app provides detailed metrics like the Confusion Matrix and Classification Report to analyze performance per class.
+Test Accuracy: ~70–75% on CIFAR-10
+
+Analyze performance class-wise with:
+
+✅ Confusion Matrix
+
+✅ Classification Report
+
+You’ll find these in the “📊 Full Evaluation” section of the app.
 
 🤝 Contributing
-Feel free to fork this repository, make improvements, and submit pull requests.
+Feel free to fork the repo, suggest improvements, or submit pull requests. Contributions are welcome!
 
 📄 License
-This project is open-source and available under the MIT License.
+This project is licensed under the MIT License — free to use, modify, and distribute.
