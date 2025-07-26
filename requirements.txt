@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.16.0 # Or 2.19.0, whatever you retrained with
+tensorflow==2.16.1 # Use the exact TensorFlow version you just successfully trained with
 numpy
 Pillow
 scikit-learn
