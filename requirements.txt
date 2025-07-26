@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.47.1
 tensorflow==2.16.1 # Use the exact TensorFlow version you just successfully trained with
 numpy
 Pillow
